@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+    <form >
+
+        <h1>Fa o programare</h1>
+
+        <fieldset>
+            <legend><span class="register"></span>Informatii generale pentru cont</legend>
+
+            <label for="name">Numele si prenumele:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email"> 
+
+            <label for="passwod">Parola:</label>
+            <input type="password" id="passwod" name="user_password">
+
+            <label for="phone">Numar de telefon:</label>
+            <input type="tel" id="phone" name="user_phone">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="user_gender">
+            <option value="male">M</option>
+            <option value="female">F</option>
+            <option value="other">Others</option>
+            </select>
+            <br>
+            
+            <label for="data_nastere">Data nasterii:</label>
+            <input type="date" id="data_nasterii" name="user_data_nasterii">
+
+            <br>
+            <label for="cnp">CNP:</label>
+            <input type="text" id="cnp" name="user_cnp" pattern="\d{13}" maxlength="13" minlength="13">
+
+        </fieldset>
+
+
+<fieldset>
+    <legend><span class="servicii"></span>Servicii oferite de salon</legend>
+
+    <input type="checkbox" id="cosmetica" name="servicii_cosmetica">
+    <label for="cosmetica">Tratament facial</label>
+
+    <input type="checkbox" id="tunsoare" name="servicii_tunsoare">
+    <label for="tunsoare">Tuns</label>
+
+    <input type="checkbox" id="mani" name="servicii_mani">
+    <label for="mani">Mani</label>
+
+    <input type="checkbox" id="pedi" name="servicii_pedi">
+    <label for="pedi">Pedi</label>
+
+    <input type="checkbox" id="masaj" name="servicii_masaj">
+    <label for="masaj">Masaj</label>
+
+    <br>
+    <label for="appointment">Selecteaza data si ora aproxiamativa la care vrei sa te programezi</label>
+    <input type="datetime-local" id="appointment name="servicii_appointment"">
+
+    <br>
+    <label for="price">Selecteaza cat esti dispus sa platesti pentru vizita la salon:</label>
+    <br>
+    <input type="range" id="price_range" name="price_range" min="0" max="2000" >
+   
+</fieldset>
+
+
+
+<fieldset>
+    <legend><span class="palta"></span>Informatii despre plata</legend>
+    
+    <label for="metoda_plata">Metoda de plata:</label>
+    <select id="metoda_plata_client" name="metoda_plata_client">
+        <option value="cash">Numerar</option>
+        <option value="card">Card</option>
+        <option value="op">OP</option>
+
+    </select>
+</fieldset>
+
+
+<button type="submit">Salvare</button>
+    </form>
+    
+    <br>
+    <hr>
+    <a href="index.html">Înapoi la Home</a>
+
+</body>
+</html>
